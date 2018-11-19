@@ -1,0 +1,10 @@
+.gridContainer {
+  display: grid;
+
+  height: 100vh;
+/* повторить колонку в 1 фр 14 раз */
+
+  grid-template-columns: repeat(14,1fr);
+  grid-column-gap: 12px;
+
+}
