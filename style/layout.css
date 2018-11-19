@@ -14,11 +14,64 @@
 }
 
 .gridContainer figure {
-  background-color: red;
+  display: grid;
 /* end нужно указывать исключительно, т.е. от 1 до 5 получится 4 колонки поэтому энд указываем на 1 больше */
   /* grid-column-start: 1;
   grid-column-end: 6; */
   /* тот же самый синтаксис что и сверху запись */
 
-  grid-column: 1 / 6
+  height: 0;
+
+  grid-column: 1 / 6;
+  grid-template-columns: repeat(5,1fr);
+
+}
+.gridContainer.type1 figure {
+margin-top: 200px;
+}
+.gridContainer.type1 figure .gradient {
+height: 750px;
+/* height: 300%; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+29,066dab+94 */
+
+background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 29%,#066dab 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  grid-column: 1 / 6;
+  grid-row: 1/2;
+
+}
+.gridContainer.type1 figure .figcaption {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.gridContainer.type1 article {
+  margin-top: 130px;
+
+  grid-column: 7 / 14;
+}
+.gridContainer.type2 figure {
+  height: 100%;
+
+  grid-column: 4 / 15;
+}
+.gridContainer.type2 figure .gradient {
+  width: calc(100% + 40px);
+  height: 100%;
+
+  background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 29%,#066dab 94%);
+}
+.gridContainer.type3 figure {
+  height: 500px;
+  margin-top: 130px;
+
+  background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 29%,#066dab 94%);
+
+  grid-column: 1 / 8;
+}
+.gridContainer.type3 figure .gradient {
+  width: calc(100% + 40px);
+  height: 100%;
+  margin-left: -40px;
+
+  background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 29%,#066dab 94%);
 }
