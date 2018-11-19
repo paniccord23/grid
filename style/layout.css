@@ -12,3 +12,11 @@
   grid-column-gap: 12px;
 
 }
+
+.gridContainer figure {
+  background-color: red;
+
+  grid-column-start: 1;
+  /* end нужно указывать исключительно, т.е. от 1 до 5 получится 4 колонки поэтому энд указываем на 1 больше */
+  grid-column-end: 6;
+}
