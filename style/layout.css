@@ -75,3 +75,10 @@ background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 29%,#066dab 94%); /* W
 
   background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 29%,#066dab 94%);
 }
+
+
+@media screen and (max-width:1280px) {
+  body {
+    background-color: lightblue;
+  }
+}
